@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42DBF275-FA61-47B9-AC4F-7FD68F127241}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_4Ben.DataTypes.MultiType</RootNamespace>
+    <AssemblyName>4Ben.DataTypes.MultiType</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="businesslogic, Version=1.0.4281.14850, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      
+    </Reference>
+    <Reference Include="ClientDependency.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="cms, Version=1.0.4281.14852, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="interfaces">
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="umbraco">
+    </Reference>
+    <Reference Include="umbraco.DataLayer, Version=1.0.4266.19404, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="umbraco.editorControls, Version=1.0.4281.20203, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PropertyTypes\PropertyTypeAttribute.cs" />
+    <Compile Include="MultiType.cs" />
+    <Compile Include="MultiTypeDataEditor.cs" />
+    <Compile Include="MultiTypeDataType.cs" />
+    <Compile Include="MultiTypeOptions.cs" />
+    <Compile Include="MultiTypePrevalueEditor.cs" />
+    <Compile Include="PropertyTypes\AbstractPropertyType.cs" />
+    <Compile Include="PropertyTypes\IPropertyType.cs" />
+    <Compile Include="PropertyTypes\PropertyTypeFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\Data\XmlData.cs" />
+    <Compile Include="Helpers\PrevalueEditors\AbstractJsonPrevalueEditor.cs" />
+    <Compile Include="Helpers\PrevalueEditors\AbstractOptions.cs" />
+    <Compile Include="Helpers\PrevalueEditors\AbstractPrevalueEditor.cs" />
+    <Compile Include="Helpers\ResourceExtensions.cs" />
+    <Compile Include="Usercontrols\MultiTypeDataEditorControl.ascx.cs">
+      <DependentUpon>MultiTypeDataEditorControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypeDataEditorControl.ascx.designer.cs">
+      <DependentUpon>MultiTypeDataEditorControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypeDataEditorEditControl.ascx.cs">
+      <DependentUpon>MultiTypeDataEditorEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypeDataEditorEditControl.ascx.designer.cs">
+      <DependentUpon>MultiTypeDataEditorEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypeDataEditorItemControl.ascx.cs">
+      <DependentUpon>MultiTypeDataEditorItemControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypeDataEditorItemControl.ascx.designer.cs">
+      <DependentUpon>MultiTypeDataEditorItemControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypePrevalueEditorControl.ascx.cs">
+      <DependentUpon>MultiTypePrevalueEditorControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypePrevalueEditorControl.ascx.designer.cs">
+      <DependentUpon>MultiTypePrevalueEditorControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypePrevalueEditorItemControl.ascx.cs">
+      <DependentUpon>MultiTypePrevalueEditorItemControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\MultiTypePrevalueEditorItemControl.ascx.designer.cs">
+      <DependentUpon>MultiTypePrevalueEditorItemControl.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Usercontrols\css\MultiTypePrevalueEditorControl.css" />
+    <EmbeddedResource Include="Usercontrols\css\MultiTypeDataEditorItemControl.css" />
+    <EmbeddedResource Include="Usercontrols\css\MultiTypeDataEditorControl.css" />
+    <EmbeddedResource Include="Usercontrols\css\MultiTypePrevalueEditorItemControl.css" />
+    <Content Include="Usercontrols\images\cross-script.png" />
+    <Content Include="Usercontrols\images\pencil.png" />
+    <EmbeddedResource Include="Usercontrols\js\MultiTypePrevalueEditorControl.js" />
+    <EmbeddedResource Include="Usercontrols\js\MultiTypeDataEditorControl.js" />
+    <Content Include="Usercontrols\MultiTypeDataEditorControl.ascx" />
+    <Content Include="Usercontrols\MultiTypeDataEditorEditControl.ascx" />
+    <Content Include="Usercontrols\MultiTypeDataEditorItemControl.ascx" />
+    <Content Include="Usercontrols\MultiTypePrevalueEditorControl.ascx" />
+    <Content Include="Usercontrols\MultiTypePrevalueEditorItemControl.ascx" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6218</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>C:\Windows\System32\xcopy.exe "$(TargetPath)" "D:\Websites\umbraco.test\bin\" /Y
+C:\Windows\System32\xcopy.exe  "$(ProjectDir)Usercontrols\*.ascx" "D:\Websites\umbraco.test\umbraco\plugins\MultiType4Ben\" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
