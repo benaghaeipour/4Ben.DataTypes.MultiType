@@ -1,0 +1,132 @@
+﻿/*#MultiType 
+{
+}
+
+#MultiType h3
+{
+    font-style: normal;
+    margin: 5px 3px 10px 0;
+}
+
+.New .header
+{
+    background:url("/umbraco_client/tabView/images/background.gif") repeat-x scroll center bottom #EEEEEE;
+    border: 1px solid #CCCCCC;
+    clear:left;
+    padding: 3px 5px;
+    margin-bottom: 3px;
+    display: block;
+    height: 22px;
+}
+
+.New .header h3
+{
+    float:left;
+    color: Black;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 5px 2px;
+}
+
+.New .newFields
+{
+    cursor: default;
+    background:white;
+    border: 1px solid #D9D7D7;
+    margin-top: 25px;
+    padding: 2px 10px;
+}
+
+.Edit
+{
+}
+
+.Edit .header
+{
+    background:url("/umbraco_client/tabView/images/background.gif") repeat-x scroll center bottom #EEEEEE;
+    border: 1px solid #CCCCCC;
+    clear:left;
+    padding: 3px 5px;
+    cursor: move;
+    margin-bottom: 3px;
+    display: block;
+    height: 22px;
+}
+
+.Edit .header h3
+{
+    float:left;
+    color: Black;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 5px 2px;
+}
+
+/*.Edit .edit
+{
+    width: 16px;
+    height: 16px;
+    background: url("<%= WebResource("_4Ben.DataTypes.MultiType.images.pencil.png")%>");
+    float:right;
+}*//*
+
+.Edit .delete
+{
+    cursor: pointer;
+    float:right;
+    margin-top: 4px;
+}
+
+.Edit .editFields
+{
+    cursor: default;
+    background:white;
+    border: 1px solid #D9D7D7;
+    margin-top: 25px;
+    padding: 2px 10px;
+}
+
+.clearfix
+{
+    display: block;
+}
+
+.row
+{
+    clear: both;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.row .label
+{
+    clear: left;
+    float: left;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-right: 1%;
+    width: 16%;
+}
+
+.row .field input[type=text]
+{
+    width: 300px;
+}
+
+.row .field textarea
+{
+    width: 300px;
+}
+
+.row .field input[type=checkbox]
+{
+    clear: right;
+    float: left;
+    padding-bottom: 5px;
+}
+
+.row .field select
+{
+    width: 300px;
+}
+*/
